@@ -8,15 +8,7 @@ import { CarService } from '../../../services/car.service.js'
 function Home() {
  const [cars, setCars] = useState([])
 
-// useEffect(() => {
-//   const fetchData = async() => {
-// const data = await CarService.getAll()
 
-//     setCars(data)
-//   }
-
-//   fetchData()
-// }, [])
 
   return (
    

@@ -12,8 +12,8 @@ useEffect(() => {
   
   if (!id) return
     const fetchData = async() => {
-    const data = await CarService.getById(IDBDatabase)
-
+    const data = await CarService.getById(id)
+console.log(data)
     setCar(data)
   }
 

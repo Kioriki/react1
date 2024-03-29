@@ -6,7 +6,7 @@ const Router = () =>{
     return (
         <BrowserRouter>      
             <Routes>
-                <Route path="http://localhost:5173/" element={<Home/> }/>
+                <Route path="/" element={<Home/> }/>
                 <Route path="car/:id" element={<CarDetail/> }/>
 
                 <Route path ='*' element ={<div>Not found</div>} />
