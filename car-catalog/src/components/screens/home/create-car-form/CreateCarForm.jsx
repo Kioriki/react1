@@ -7,7 +7,7 @@ const clearData ={
     image: '',
 }
 const CreateCarForm = ({setCars}) => {
-    const [data, setData] = useState()
+    const [data, setData] = useState(clearData)
   
 
     const createCar = e =>{
