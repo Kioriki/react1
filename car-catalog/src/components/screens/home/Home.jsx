@@ -1,13 +1,24 @@
-import styles from './Home.module.css'
-import {cars} from './cars.data.js'
+
+import CarItem from './car-item/CarItem.jsx'
+import CreateCarForm from './create-car-form/CreateCarForm.jsx'
+import {cars as carsData} from './cars.data.js'
+import { useEffect, useState } from 'react'
 
 
 function Home() {
+ const [cars, setCars] = useState(carsData)
+
+useEffect(() => {
+  
+}, [])
+
   return (
    
       <div>
         <h1>Cars catalog</h1>
+        <CreateCarForm setCars={setCars}/>
         <div>
+          
           {cars.length ? (
             cars.map(car =>
               <CarItem  key={car.id}car={car}/>)

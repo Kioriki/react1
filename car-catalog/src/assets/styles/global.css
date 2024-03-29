@@ -14,3 +14,14 @@ body{
 h1{
     margin-bottom: 20px;
 }
+.btn{
+    display: flex;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color: aquamarine;
+}

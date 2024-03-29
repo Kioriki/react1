@@ -7,7 +7,7 @@ return(
         <div 
         className={styles.image}
         style={{
-            backgroundImage: 'url(${car.image})',
+            backgroundImage: `url(${car.image})`,
         
         }}/>
         <div className={styles.info}>
